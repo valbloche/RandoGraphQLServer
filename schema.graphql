@@ -1,0 +1,30 @@
+type Rando{
+    id: ID
+    name: String
+    denivele: Int
+    climb_duration: Int
+    descent_duration: Int
+    total_duration: Int
+    cotation: Cotation
+    massif: Massif
+}
+
+type Cotation{
+    id: ID
+    label: String
+    short_description: String
+    long_description: String
+}
+
+type Massif{
+    id: ID
+    name: String
+    description: String 
+}
+
+type Query {
+    Randos: [Rando]
+    Cotations: [Cotation]
+    Massifs: [Massif]
+    Rando(id: ID!): Rando
+}
