@@ -41,7 +41,7 @@ module.exports = {
         {
             id:1,
             name:'Bauges',
-            description:"Bauges"
+            description:"Le massif des Bauges, est un massif montagneux calcaire des préalpes françaises du nord, se situant à cheval sur les départements de la Savoie et de la Haute-Savoie et culminant à plus de 2 200 mètres d'altitude."
         },
         {
             id:2,
@@ -82,7 +82,9 @@ module.exports = {
             climb_duration:120,
             descent_duration:120,
             cotation:2,
-            massif:1
+            massif:1,
+            gps:[45.667627, 6.217007],
+            passages: []
         },
         {
             id:2,
@@ -91,7 +93,9 @@ module.exports = {
             climb_duration:150,
             descent_duration:90,
             cotation:3,
-            massif:2
+            massif:2,
+            gps:[45.464409, 5.925411],
+            passages: []
         },
         {
             id:3,
@@ -100,7 +104,9 @@ module.exports = {
             climb_duration:180,
             descent_duration:100,
             cotation:3,
-            massif:2
+            massif:2,
+            gps: [45.287535, 5.787978],
+            passages: []
         },
         {
             id:4,
@@ -109,7 +115,9 @@ module.exports = {
             climb_duration:180,
             descent_duration:100,
             cotation:2,
-            massif:1
+            massif:1,
+            gps:[45.621728, 6.229087],
+            passages: []
         },
         {
             id:5,
@@ -118,7 +126,9 @@ module.exports = {
             climb_duration:160,
             descent_duration:80,
             cotation:3,
-            massif:1
+            massif:1,
+            gps:[45.656909, 6.117031],
+            passages: []
         },
         {
             id:6,
@@ -127,7 +137,9 @@ module.exports = {
             climb_duration:100,
             descent_duration:60,
             cotation:2,
-            massif:1
+            massif:1,
+            gps: [45.710798, 6.190475],
+            passages: []
         },
         {
             id:7,
@@ -136,7 +148,9 @@ module.exports = {
             climb_duration:140,
             descent_duration:90,
             cotation:2,
-            massif:1
+            massif:1,
+            gps:[45.631972, 6.229799],
+            passages: []
         },
         {
             id:8,
@@ -145,7 +159,9 @@ module.exports = {
             climb_duration:100,
             descent_duration:50,
             cotation:1,
-            massif:3
+            massif:3,
+            gps:[45.393688, 6.128130],
+            passages: []
         },
         {
             id:9,
@@ -154,7 +170,9 @@ module.exports = {
             climb_duration:150,
             descent_duration:110,
             cotation:2,
-            massif:3
+            massif:3,
+            gps: [45.249146, 6.078594],
+            passages: []
         },
         {
             id:10,
@@ -163,7 +181,9 @@ module.exports = {
             climb_duration:70,
             descent_duration:40,
             cotation:1,
-            massif:6
+            massif:6,
+            gps: [46.001855, 6.467602],
+            passages: []
         },
         {
             id:10,
@@ -172,7 +192,9 @@ module.exports = {
             climb_duration:130,
             descent_duration:100,
             cotation:2,
-            massif:6
+            massif:6,
+            gps: [46.022494, 6.513467],
+            passages: []
         },
         {
             id:11,
@@ -181,7 +203,20 @@ module.exports = {
             climb_duration:90,
             descent_duration:40,
             cotation:1,
-            massif:5
+            massif:5,
+            gps: [45.704458, 6.669016],
+            passages: []
+        },
+        {
+            id:12,
+            name:"La Tournette",
+            denivele:1300,
+            climb_duration:180,
+            descent_duration:100,
+            cotation:2,
+            massif:6,
+            gps: [45.826853, 6.286459],
+            passages: []
         }
     ]
 }

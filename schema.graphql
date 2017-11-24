@@ -1,3 +1,5 @@
+scalar Date
+
 type Rando{
     id: ID
     name: String
@@ -7,6 +9,9 @@ type Rando{
     total_duration: Int
     cotation: Cotation
     massif: Massif
+    gps: [Float]
+    passages: [Passage]
+    weather: Weather
 }
 
 type Cotation{
@@ -20,6 +25,46 @@ type Massif{
     id: ID
     name: String
     description: String 
+}
+
+type Passage{
+    id:ID
+    date: Date
+    departure_hour: Int
+    arrival_hour: Int
+    duration: Int
+    difficulty: Int
+    animal_density: Int
+    landscape_beauty: Int
+    comments: String
+}
+
+type Weather{
+    main: String
+    description: String
+    temperature: Float
+    humidity: Float
+    wind: Wind
+}
+
+type Wind{
+    speed: Float
+    deg: Float 
+}
+
+input InputPassage{
+    date: Date
+    departure_hour: Int
+    arrival_hour: Int
+    difficulty: Int
+    animal_density: Int
+    landscape_beauty: Int
+    comments: String
+}
+
+type Mutation{
+    addPassageToRando(IDRando: Int, passage: InputPassage): Rando
+    removePassageFromRando(IDRando: Int, IDPassage: Int): Rando
 }
 
 type Query {
